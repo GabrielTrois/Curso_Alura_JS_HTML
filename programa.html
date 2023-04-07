@@ -1,22 +1,23 @@
 <meta charset="UTF-8">
 
 <script>
+
+    function lineBreak(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        lineBreak();
+    }
+
     var ano = 2022;
 
-    document.write("Eu nasci em " + (ano - 19) + "<br>");
-    document.write("Minha idade é " + (ano - 2003) + " anos" + "<br>");
+    mostra("Eu nasci em " + (ano - 19));
+    
+    mostra("Minha idade é " + (ano - 2003) + " anos");
 
     ano += 1;
-    document.write("Ano que vem terei " + (ano - 2003) + " anos" + "<br>");
+    mostra("Ano que vem terei " + (ano - 2003) + " anos");
 
-    ano = 2022;
-    var anoNascimento = 2003;
-    var media = (ano + anoNascimento) / 2;
-
-    document.write("A média do ano da meu nascimento é " + Math.round(media) + " anos<br>");
-
-    var nome = "Gabriel";
-    var idade = (ano - 2003);
-
-    document.write("Meu nome é " + nome + "<br>" + "Eu tenho " + idade + " anos")
 </script>
