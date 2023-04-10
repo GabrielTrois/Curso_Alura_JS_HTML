@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <meta charset="UTF-8">
 
 <body>
@@ -69,4 +70,42 @@
         mostra("FIM DE JOGO<br>O número pensado era " + numeroPensado);
     }
 
+=======
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n){
+        return Math.round(Math.random() * n);
+    }
+
+    var numeroPensado = sorteia(100);
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } 
+    if (chute > numeroPensado) {
+
+        mostra("Você errou! O número que pensei era menor que " + chute);
+    }
+
+    if (chute < numeroPensado){
+        mostra("Você errou! O número que pensei era maior que " + chute);
+    }
+
+>>>>>>> af61d16cf8cc315ca7c47e320fb254c06299b8ec
 </script>
